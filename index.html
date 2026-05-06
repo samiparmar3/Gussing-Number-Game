@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number Guessing Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Number Guessing Game</h1>
+
+    <div class="card" id="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <p>Guess the Number</p>
+            </div>
+            <div class="card-back">
+                <p id="correctNumber"></p>
+            </div>
+        </div>
+    </div>
+
+    <p id="hint"></p>
+    <p id="attempts"></p>
+
+    <input type="number" id="input" placeholder="Enter number (1-10)">
+    <button id="submit">Submit</button>
+    <button id="restart">Restart</button>
+
+    <div class="result" id="result"></div>
+
+    <h3>Leaderboard (Best Attempts)</h3>
+    <ul id="leaderboard"></ul>
+
+</div>
+
+<audio id="winSound" src="https://www.fesliyanstudios.com/play-mp3/387"></audio>
+<audio id="loseSound" src="https://www.fesliyanstudios.com/play-mp3/667"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
